@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="할란 에스테이트 2021 리뷰. Wine Advocate·James Suckling 100점, Wine Spectator 97점. 블렌드 구성, 테이스팅 노트, 한국 가격과 구매처 정리.">
+<title>할란 에스테이트 2021 — 세 매체에서 만점을 받은 나파 밸리의 기준</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background: #f7f6f2;
+    color: #1a1a1a;
+    line-height: 1.8;
+  }
+
+  header {
+    background: #1a1a2e;
+    color: #e8dcc8;
+    padding: 12px 24px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .meta-bar {
+    background: #f0ece3;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  .meta-bar span { margin: 0 16px; }
+  .meta-bar b { color: #555; }
+
+  .hero {
+    background: #1a1a2e;
+    color: #e8dcc8;
+    padding: 64px 24px 48px;
+    text-align: center;
+  }
+  .hero .label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #a89070;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(22px, 4vw, 34px);
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 720px;
+    margin: 0 auto 28px;
+  }
+  .hero .summary {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #c8bfb0;
+    max-width: 620px;
+    margin: 0 auto;
+    font-style: italic;
+  }
+
+  .scores-strip {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    background: #13112a;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  .score-item {
+    text-align: center;
+    padding: 12px 32px;
+    border-right: 1px solid #2e2b4a;
+  }
+  .score-item:last-child { border-right: none; }
+  .score-item .pts {
+    font-size: 30px;
+    font-weight: 700;
+    color: #e8dcc8;
+    line-height: 1;
+  }
+  .score-item .critic {
+    font-size: 10px;
+    color: #9080a0;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+    text-transform: uppercase;
+  }
+
+  article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 40px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0d8c8;
+  }
+
+  p { margin-bottom: 14px; font-size: 15.5px; }
+
+  .tasting-grid {
+    display: grid;
+    gap: 12px;
+    margin: 16px 0 24px;
+  }
+  .tasting-item {
+    background: #fff;
+    border-left: 3px solid #1a1a2e;
+    padding: 12px 16px;
+    border-radius: 0 4px 4px 0;
+  }
+  .tasting-item .t-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .tasting-item .t-text { font-size: 14.5px; line-height: 1.7; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 14.5px;
+  }
+  thead tr { background: #1a1a2e; color: #e8dcc8; }
+  thead th { padding: 10px 14px; text-align: left; font-weight: 600; letter-spacing: 0.05em; }
+  tbody tr:nth-child(odd) { background: #f5f3ee; }
+  tbody tr:nth-child(even) { background: #fff; }
+  tbody td { padding: 9px 14px; }
+  tbody td:last-child { font-weight: 700; text-align: center; }
+
+  .info-box {
+    background: #fff;
+    border: 1px solid #e0d8c8;
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 16px 0 28px;
+    font-size: 14.5px;
+  }
+  .info-box .row { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid #f0ece3; }
+  .info-box .row:last-child { border-bottom: none; }
+  .info-box .row .key { font-weight: 700; color: #555; min-width: 100px; flex-shrink: 0; }
+
+  .faq { margin-top: 8px; }
+  .faq-item { margin-bottom: 20px; }
+  .faq-item .q {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+  }
+  .faq-item .a {
+    font-size: 14.5px;
+    color: #444;
+    padding-left: 14px;
+    border-left: 2px solid #c8bfb0;
+  }
+
+  footer {
+    background: #1a1a2e;
+    color: #6060a0;
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 600px) {
+    .score-item { padding: 10px 18px; }
+    .score-item .pts { font-size: 24px; }
+    article { padding: 32px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header>Naracella — 프리미엄 와인 콘텐츠</header>
+
+<div class="meta-bar">
+  <span><b>slug:</b> harlan-estate-2021-review</span>
+  <span><b>search-intent:</b> commercial</span>
+</div>
+
+<div class="hero">
+  <div class="label">Napa Valley · Cabernet Sauvignon · 2021</div>
+  <h1>할란 에스테이트 2021<br>세 매체에서 만점을 받은 나파 밸리의 기준</h1>
+  <p class="summary">
+    2021 할란 에스테이트는 Wine Advocate(리사 페로티-브라운), James Suckling, Decanter 세 곳에서
+    100점을 받았다. Wine Spectator는 97점을 부여했고, Vinous의 안토니오 갈로니는
+    "sublime refinement and class"라고 평했다. 국내 독점 수입은 나라셀라가 담당한다.
+  </p>
+</div>
+
+<div class="scores-strip">
+  <div class="score-item">
+    <div class="pts">100</div>
+    <div class="critic">Wine Advocate</div>
+  </div>
+  <div class="score-item">
+    <div class="pts">100</div>
+    <div class="critic">James Suckling</div>
+  </div>
+  <div class="score-item">
+    <div class="pts">100</div>
+    <div class="critic">Decanter</div>
+  </div>
+  <div class="score-item">
+    <div class="pts">97</div>
+    <div class="critic">Wine Spectator</div>
+  </div>
+</div>
+
+<article>
+
+  <h2>2021 빈티지가 특별한 이유</h2>
+  <p>
+    2020년 캘리포니아 산불은 나파 일대 포도원에 연기 오염(smoke taint) 우려를 남겼다.
+    2021년은 그 영향에서 완전히 벗어난 첫 빈티지다. 봄 서리 이후 여름은 균일하게 건조하고
+    따뜻했으며, 9월 초 수확이 마무리되면서 완숙도와 산도를 동시에 확보했다.
+    평가단 사이에서 "10년 내 가장 깔끔한 나파 빈티지 중 하나"로 언급된다.
+  </p>
+
+  <h2>블렌드 구성</h2>
+  <p>
+    카베르네 소비뇽 80% 이상에 카베르네 프랑과 메를로가 소량 블렌딩된다.
+    할란 에스테이트는 정확한 비율을 공개하지 않으며, 해마다 오클빌 포도원의 상태에 따라 구성을 조정한다.
+  </p>
+
+  <h2>테이스팅 노트</h2>
+  <div class="tasting-grid">
+    <div class="tasting-item">
+      <div class="t-label">외관</div>
+      <div class="t-text">짙은 가넷-퍼플, 가장자리에 깊은 보랏빛이 감돈다.</div>
+    </div>
+    <div class="tasting-item">
+      <div class="t-label">향</div>
+      <div class="t-text">블랙커런트 젤리, 다크 체리, 제비꽃, 흑연이 첫 층을 형성한다. 공기 접촉 후 삼나무, 다크 코코아, 에스프레소, 감초, 블랙 트러플이 올라온다.</div>
+    </div>
+    <div class="tasting-item">
+      <div class="t-label">미각</div>
+      <div class="t-text">중간에서 풀 바디 사이. 타닌은 극도로 부드럽고 촘촘하며, 붉은 과실과 검은 과실 레이어가 긴 피니시 내내 이어진다. Wine Advocate는 "jaw-dropping grace and poise"라고 표현했다.</div>
+    </div>
+    <div class="tasting-item">
+      <div class="t-label">숙성 잠재력</div>
+      <div class="t-text">2041년, 2051년, 심지어 2061년까지 열릴 수 있다는 평가가 나온다. 지금 마시려면 2–3시간 디캔팅이 필수다.</div>
+    </div>
+  </div>
+
+  <h2>비평가 점수</h2>
+  <table>
+    <thead>
+      <tr><th>비평가</th><th>점수</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Lisa Perrotti-Brown (Wine Advocate)</td><td>100</td></tr>
+      <tr><td>James Suckling</td><td>100</td></tr>
+      <tr><td>Decanter</td><td>100</td></tr>
+      <tr><td>Wine Spectator</td><td>97</td></tr>
+    </tbody>
+  </table>
+
+  <h2>한국 시장 정보</h2>
+  <p>
+    국내 독점 수입사는 <strong>나라셀라</strong>다. 750ml 기준 국내 공급가는 약 680만 원 수준이며,
+    판매처별 차이가 있다. 국제 시장 평균가는 병당 약 $1,992(세전)로, 세계 최고가 컬트 와인 중 하나다.
+    공식 배정 대기 명단 외에는 나라셀라 공급 재고를 통해 구매하는 것이 국내에서 가장 확실한 경로다.
+  </p>
+
+  <h2>서빙 가이드</h2>
+  <div class="info-box">
+    <div class="row"><span class="key">서빙 온도</span><span>17–18°C</span></div>
+    <div class="row"><span class="key">디캔팅</span><span>지금 열 경우 최소 2–3시간</span></div>
+    <div class="row"><span class="key">최적 음용</span><span>2029–2045년</span></div>
+    <div class="row"><span class="key">페어링</span><span>건식 숙성 소고기, 트러플을 곁들인 요리, 하드 치즈(파르미지아노 36개월 이상)</span></div>
+  </div>
+
+  <h2>FAQ</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="q">Q. 할란 에스테이트 2021은 국내에서 어디서 구매할 수 있나요?</div>
+      <div class="a">국내 독점 수입사는 나라셀라입니다. 재고 상황에 따라 나라셀라 공급 와인샵 및 백화점을 통해 구매할 수 있습니다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Q. 국내 가격은 얼마인가요?</div>
+      <div class="a">750ml 기준 약 680만 원 수준입니다. 국제 시장가(평균 $1,992 세전)와 환율·관세를 반영한 가격으로, 판매처에 따라 차이가 있을 수 있습니다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Q. 2021을 지금 마셔도 되나요?</div>
+      <div class="a">마실 수 있지만 최적 음용 시기는 2029년 이후입니다. 지금 열 경우 2–3시간 이상 디캔팅을 권장합니다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Q. 2020 빈티지와 비교하면 어떤가요?</div>
+      <div class="a">2020은 산불 시즌으로 연기 오염 우려가 일부 있었습니다. 2021은 그 영향이 없는 깨끗한 빈티지로, 전반적으로 더 높은 평가를 받고 있습니다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Q. 할란 에스테이트, 본드(Bond), 프로몬토리(Promontory)의 차이는 무엇인가요?</div>
+      <div class="a">본드는 할란 패밀리의 싱글 빈야드 시리즈이고, 프로몬토리는 윌 할란이 이끄는 별도 프로젝트입니다. 할란 에스테이트는 패밀리 플래그십으로 가장 높은 배정 우선순위를 갖습니다.</div>
+    </div>
+  </div>
+
+</article>
+
+<footer>© Naracella · 프리미엄 와인 콘텐츠</footer>
+
+</body>
+</html>
